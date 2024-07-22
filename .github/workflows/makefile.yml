@@ -17,7 +17,7 @@ jobs:
 
 
     - name: Install dependencies
-      run: sudo apt install xorg 
+      run: sudo apt install xorg X
 
       
     - name: make
