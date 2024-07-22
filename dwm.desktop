@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=dwm
+Comment=codeVoids dwm config
+Exec=/bin/dwm
+TryExec=/bin/dwm
+Type=Application
+X-LightDM-DesktopNamedwm
+DesktopNames=dwm
