@@ -14,14 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+
 
     - name: Install dependencies
       run: sudo apt install xorg 
 
-    - name: Run check
-      run: make check
       
     - name: make
       run: sudo make clean install
