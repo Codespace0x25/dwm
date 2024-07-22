@@ -17,7 +17,7 @@ jobs:
 
 
     - name: Install dependencies
-      run: sudo apt install xorg X
+      run: sudo apt install xorg libxinerama-dev build-essential
 
       
     - name: make
