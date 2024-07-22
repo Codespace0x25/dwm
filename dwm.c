@@ -2000,7 +2000,7 @@ zoom(const Arg *arg) {
 
 int
 main(int argc, char *argv[]) {
-	system("kitty tmux & picom & ")
+	system("kitty tmux & picom & ");
 	if(argc == 2 && !strcmp("-v", argv[1]))
 		die("dwm-"VERSION", © 2006-2009 dwm engineers, see LICENSE for details\n");
 	else if(argc != 1)
