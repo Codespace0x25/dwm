@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-
+#include <X11/XF86keysym.h>
 /* appearance */
 static const char font[]            = "-*-*-medium-*-*-*-14-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#cccccc";
@@ -47,8 +47,12 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "rofi","-show","drun","-show-icons",NULL};
 static const char *termcmd[]  = { "kitty","tmix", NULL };
+static const char *valup[] = {"amixer","set","Master","5%+",NULL};
+static const char *valdone[] = {"amixer","set","Master","5%-",NULL};
 
 static Key keys[] = {
+	{0,XF86XK_AudioLowerVolume,  spawn, {.v = valdone}},
+	{0,XF86XK_AudioRaiseVolume,  spawn, {.v = valup}},
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
