@@ -17,7 +17,7 @@ jobs:
 
 
     - name: Install dependencies
-      run: sudo apt install xorg libxinerama-dev build-essentia alsa-utils
+      run: sudo apt install xorg libxinerama-dev build-essential alsa-utils
       
     - name: make
       run: sudo make clean install
